@@ -8,9 +8,9 @@ const  todoList =  document.querySelector('.todo-list');
 todoButton.addEventListener('click', addTodo);
 
 //functions
-function addTodo(Event){
+function addTodo(ev){
     //prevent form from submitting
-    event.preventDefault();
+    ev.preventDefault();
     //todo DIV
     const todoDiv = document.createElement('div');
     todoDiv.classList.add("todo");
@@ -34,4 +34,6 @@ function addTodo(Event){
     trashButton.classList.add("complete-btn");
     todoDiv.appendChild(trashButton);
 
+    //Append to list
+    todoList.appendChild(todoDiv)
 }
