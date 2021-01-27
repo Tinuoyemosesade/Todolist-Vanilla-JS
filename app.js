@@ -8,15 +8,15 @@ const  todoList =  document.querySelector('.todo-list');
 todoButton.addEventListener('click', addTodo);
 
 //functions
-function addTodo(ev){
+function addTodo(event){
     //prevent form from submitting
-    ev.preventDefault();
+    event.preventDefault();
     //todo DIV
     const todoDiv = document.createElement('div');
     todoDiv.classList.add("todo");
     //create LI
     const newTodo = document.createElement('li');
-    newTodo.innerText ='hey';
+    newTodo.innerText =todoInput.value;
     newTodo.classList.add('todo-item'); 
     todoDiv.appendChild(newTodo);
     
@@ -31,9 +31,11 @@ function addTodo(ev){
 
     const trashButton =document.createElement('button');
     trashButton.innerText = '<i class= "fas fa-trash"></i>';
-    trashButton.classList.add("complete-btn");
+    trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
 
     //Append to list
-    todoList.appendChild(todoDiv)
+    todoList.appendChild(todoDiv);
+   //clear todo input value
+   todoInput.value=" ";
 }
