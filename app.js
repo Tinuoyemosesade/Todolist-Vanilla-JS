@@ -31,7 +31,7 @@ function addTodo(event){
     //check trash button  
 
     const trashButton =document.createElement('button');
-    trashButton.innerText = '<i class= "fas fa-trash"></i>';
+    trashButton.innerText = '<i class= "fas fa-trash"></i> ';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
 
