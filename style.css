@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   body {
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, #65e0f6 0%, #858dfd 100%);
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -34,8 +34,8 @@
     transition: all 0.3s ease;
   }
   form button:hover {
-    background: #ff6f47;
-    color: white;
+    background: #6947ff;
+    color: rgb(255, 255, 255);
   }
   .todo-container {
     display: flex;
@@ -50,7 +50,7 @@
   
   .todo {
     margin: 0.5rem;
-    background: white;
+    background: rgb(255, 255, 255);
     font-size: 1.5rem;
     color: black;
     display: flex;
@@ -131,4 +131,9 @@
     cursor: pointer;
     pointer-events: none;
   }
-  
+  /* Transition */
+  /*
+  .select:hover::after {
+    transform: scale(1.5);
+  }
+  */
